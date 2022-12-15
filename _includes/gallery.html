@@ -1,0 +1,13 @@
+<div class="gallery container">
+  <div class="wrapper">
+    <h2>Галерея</h2>
+
+    <div class="owl-carousel owl-theme gallery-slider">
+      {% for picture in site.data.pictures %}
+      <div class="gallery-slider__item" style="background-image: url({{ picture.image }})">
+        <p>{{ picture.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

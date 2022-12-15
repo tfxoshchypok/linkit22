@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Главная страница</title>
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE = edge">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&amp;family=Ubuntu:wght@700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="default-backdrop" id="firstPopupBackdrop"></div>
+<div class="default-popup first-popup">
+  <div class="default-popup__header">
+    <img class="default-popup__icon" alt="" src="static/images/common/logo-figure.svg">
+    <p class="default-popup__title">Реєстрація</p>
+    <div class="default-popup__close">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="23.9996" cy="24.0001" r="23.3345" fill="#333333"/>
+        <rect opacity="0.9" x="17.6914" y="28.2285" width="14.8944" height="2.97888" transform="rotate(-45.1434 17.6914 28.2285)" fill="#F2F2F2"/>
+        <rect x="19.7715" y="17.6914" width="14.8944" height="2.97888" transform="rotate(44.8566 19.7715 17.6914)" fill="#F2F2F2"/>
+      </svg>
+    </div>
+  </div>
+  <form class="default-popup__body">
+    <p class="default-popup__title">Реєстрація</p>
+    <p class="default-popup__text">Зараз триває набір в групу, яка стартує в квітні 2021. Приєднатися до групи можна до початку квітня. <br>
+      Перший Урок курсу Python 3 БЕЗКОШТОВНИЙ! <br>
+      Вартість курсу 3000 грн. <br>
+    </p>
+    <span class="default-popup__warn">Заповніть будь-ласка поля форми!</span>
+    <input class="default-input" placeholder="Ім'я">
+    <input class="default-input" placeholder="Номер телефону">
+    <button class="default-button">зареєструватися</button>
+  </form>
+</div>
+
+<div class="main-wrapper">
+  <header class="header">
+    <div class="wrapper">
+      <a class="logo">
+        <img class="logo__figure" alt="" src="static/images/common/logo-figure.svg">
+        <img class="logo__text" alt="" src="static/images/common/logo-text.svg">
+      </a>
+
+      <nav class="nav-top">
+        <a class="nav-top__link" href="#about-school">Про школу</a>
+        <a class="nav-top__link" href="#courses">Курси та набір</a>
+        <a class="nav-top__link" href="#contacts">Контакти</a>
+      </nav>
+
+      <div class="mobile-nav-switcher"></div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu-item" href="#about-school">Про школу</a>
+    <a class="mobile-menu-item" href="#courses">Курси та набір</a>
+    <a class="mobile-menu-item" href="#contacts">Контакти</a>
+    <a class="mobile-menu-link" href="#">
+      <img alt="" src="static/images/common/telegram.svg">
+    </a>
+  </div>
+
+  <main class="content">
+    <div class="intro-screen container">
+      <div class="wrapper">
+        <div class="h1-side">
+          <h1>Дитяча школа <br>програмування</h1>
+          <p>Перший  урок будь-якого курсу <br><strong>безкоштовний!</strong></p>
+          <a href="#courses">Обрати курс</a>
+        </div>
+
+        <div class="figure-side">
+          <img alt="" src="static/images/common/fs-figure.svg">
+          <p>Допомогаємо дітям зробити перші
+            <br>кроки в it: основи алгоритмів,
+            <br>веб-програмування, мікроконтролери
+            <br>та роботи, IoT, JavaScript та Python
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-buttons">
+      <a class="fixed-button" href="#">
+        <img alt="" src="static/images/common/toTop.svg">
+      </a>
+    </div>
+
+    <div class="in-school container" id="about-school">
+      <div class="wrapper">
+        <h2>У школі «Лінк»</h2>
+
+        <div class="in-school__inner">
+          <article class="in-school__item">
+            <img alt="" src="static/images/common/people.png">
+            <h3>Невеликі <br>навчальні групи</h3>
+            <p>8-10 учнів и професійні
+              <br>викладачі.Оптимальна кількіть
+              <br>учнів для ефективної роботи з
+              <br>кожною дитиною індивідуально
+            </p>
+          </article>
+
+          <article class="in-school__item">
+            <img alt="" src="static/images/common/pc.png">
+            <h3>Сучасний класс <br>під керівництвом PiNet</h3>
+            <p>Клас на базі сучасної екосистеми
+              <br>PiNet для навчальних мереж. Рабочі
+              <br>ісця дітей обладнані компютером
+              <br>Raspberry Pi і мікроконтролером
+              <br><span>micro:bit</span>
+            </p>
+          </article>
+
+          <article class="in-school__item">
+            <img alt="" src="static/images/common/men.png">
+            <h3>Професійні педагоги <br>з практичним досвідом</h3>
+            <p>Усі вчителя у нащій школі
+              <br>мають педагогічну освіту та
+              <br>обов’язковий практичний
+              <br>досвід програмування
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="courses container" id="courses">
+      <div class="wrapper">
+        <div class="courses-inner">
+
+          <div class="courses-item">
+            <h2> Курси ІТ-школи «Лінк»</h2>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ind</p>
+          </div>
+
+          <div class="courses-item">
+            <img class="icon" alt="" src="static/images/common/courses-icon-0.svg">
+            <h3>«Веб-програмування»</h3>
+            <span class="price">від 4500₴</span>
+            <a class="read-more" href="./index-sc.html">
+              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928933C5.95262 0.538408 5.31946 0.538408 4.92893 0.928933C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM-8.74228e-08 9L12 9L12 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#5A5388"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="courses-item">
+            <img class="icon" alt="" src="static/images/common/courses-icon-1.svg">
+            <h3>«Python 3»</h3>
+            <span class="price">від 4500₴</span>
+            <a class="read-more" href="./index-sc.html">
+              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928933C5.95262 0.538408 5.31946 0.538408 4.92893 0.928933C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM-8.74228e-08 9L12 9L12 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#5A5388"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="courses-item">
+            <img class="icon" alt="" src="static/images/common/courses-icon-2.svg">
+            <h3>«Python 3»</h3>
+            <span class="price">від 4500₴</span>
+            <a class="read-more" href="./index-sc.html">
+              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928933C5.95262 0.538408 5.31946 0.538408 4.92893 0.928933C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM-8.74228e-08 9L12 9L12 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#5A5388"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="courses-item">
+            <img class="icon" alt="" src="static/images/common/courses-icon-3.svg">
+            <h3>«Python 3»</h3>
+            <span class="price">від 4500₴</span>
+            <a class="read-more" href="./index-sc.html">
+              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928933C5.95262 0.538408 5.31946 0.538408 4.92893 0.928933C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM-8.74228e-08 9L12 9L12 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#5A5388"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="courses-item">
+            <img class="icon" alt="" src="static/images/common/courses-icon-4.svg">
+            <h3>«Python 3»</h3>
+            <span class="price">від 4500₴</span>
+            <a class="read-more" href="./index-sc.html">
+              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928933C5.95262 0.538408 5.31946 0.538408 4.92893 0.928933C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM-8.74228e-08 9L12 9L12 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#5A5388"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="statistics container">
+      <img class="statistics-figure" alt="" src="static/images/common/group-vector.png">
+      <img class="statistics-tablet-figure" alt="" src="static/images/common/stats-fig.svg">
+      <div class="wrapper">
+        <h2></h2>
+        <div class="statistics-inner">
+
+          <div class="statistics-inner__item">
+            <span class="num">100+</span>
+            <span class="text">Проведено  практичних <br>занять</span>
+          </div>
+
+          <div class="statistics-inner__item">
+            <span class="num">30+</span>
+            <span class="text">Набрано груп на різні <br>IT напрямки</span>
+          </div>
+
+          <div class="statistics-inner__item">
+            <span class="num">500+</span>
+            <span class="text">Учнів пройшли курс <br>в IT-школі «Лінк»</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="faq container">
+      <div class="wrapper">
+        <div class="menthors">
+          <h2>Ментори</h2>
+
+          <div class="menthors-item">
+            <figure>
+              <img alt="" src="static/images/common/menthor.jpg">
+            </figure>
+            <span class="menthors-item__name">Jane Cooper</span>
+            <span class="menthors-item__type">Fullstack developer / Mentor</span>
+          </div>
+
+          <div class="menthors-item">
+            <figure>
+              <img alt="" src="static/images/common/menthor.jpg">
+            </figure>
+            <span class="menthors-item__name">Jane Cooper</span>
+            <span class="menthors-item__type">Fullstack developer / Mentor</span>
+          </div>
+
+          <div class="menthors-item">
+            <figure>
+              <img alt="" src="static/images/common/menthor.jpg">
+            </figure>
+            <span class="menthors-item__name">Jane Cooper</span>
+            <span class="menthors-item__type">Fullstack developer / Mentor</span>
+          </div>
+
+        </div>
+
+        <h3>Популярні питання батьків</h3>
+        <div class="questions-answers">
+
+          <div class="questions-answers__item">
+            <div class="questions-answers__item-header">Коли починаются заняття?</div>
+            <div class="questions-answers__item-body">Знайомство з інструментами та мовами веб-програмування. Дизайн та розробка власного сайту.</div>
+          </div>
+
+          <div class="questions-answers__item">
+            <div class="questions-answers__item-header">Коли починаются заняття?</div>
+            <div class="questions-answers__item-body">Знайомство з інструментами та мовами веб-програмування. Дизайн та розробка власного сайту.</div>
+          </div>
+
+          <div class="questions-answers__item">
+            <div class="questions-answers__item-header">Коли починаются заняття?</div>
+            <div class="questions-answers__item-body">Знайомство з інструментами та мовами веб-програмування. Дизайн та розробка власного сайту.</div>
+          </div>
+
+          <div class="questions-answers__item">
+            <div class="questions-answers__item-header">Коли починаются заняття?</div>
+            <div class="questions-answers__item-body">Знайомство з інструментами та мовами веб-програмування. Дизайн та розробка власного сайту.</div>
+          </div>
+
+          <div class="questions-answers__item">
+            <div class="questions-answers__item-header">Коли починаются заняття?</div>
+            <div class="questions-answers__item-body">Знайомство з інструментами та мовами веб-програмування. Дизайн та розробка власного сайту.</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="gallery container">
+      <div class="wrapper">
+        <h2>Галерея</h2>
+
+        <div class="owl-carousel owl-theme gallery-slider">
+          <div class="gallery-slider__item" style="background-image: url(static/images/common/slider-item.jpg)">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <div class="gallery-slider__item" style="background-image: url(static/images/common/slider-item.jpg)">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <div class="gallery-slider__item" style="background-image: url(static/images/common/slider-item.jpg)">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <div class="gallery-slider__item" style="background-image: url(static/images/common/slider-item.jpg)">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <div class="gallery-slider__item" style="background-image: url(static/images/common/slider-item.jpg)">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <div class="gallery-slider__item" style="background-image: url(static/images/common/slider-item.jpg)">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="about container" id="contacts">
+      <div class="wrapper">
+        <div class="contacts">
+          <h2>Контакты</h2>
+
+          <p>Залишились запитання? <br>Звертайтесь!</p>
+          <div class="contacts-data">
+            <div class="contacts-data__container">
+              <a class="contacts-data__item" href="tel:068 500 6977">
+                <img alt="" src="static/images/common/tel.svg">
+                068 500 6977
+              </a>
+              <a class="contacts-data__item" href="tel:068 500 6977">
+                <img alt="" src="static/images/common/facebook.svg">
+                Facebook
+              </a>
+            </div>
+
+            <div class="contacts-data__container">
+              <span class="contacts-data__item">
+                <img alt="" src="static/images/common/map.svg">
+                вул. Івана Франка, 28 - 2, <br>Дрогобыч 82100
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.836985804495!2d23.497920915924354!3d49.35523387354792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a4c18b2c4c293%3A0xe9acc70839216336!2z0YPQuy4g0JjQstCw0L3QsCDQpNGA0LDQvdC60L4sIDI4LCDQlNGA0L7Qs9C-0LHRi9GHLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDgyMTAw!5e0!3m2!1sru!2sua!4v1631183383263!5m2!1sru!2sua" width="100%" height="366" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <h2>Контакты</h2>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<script src="static/js/owl.carousel.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>
