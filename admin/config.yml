@@ -8,6 +8,7 @@ collections:
     label: 'Інформація про школу'
     description: 'description'
     folder: '_information'
+    create: true
     fields:
       - { name: title, label: 'Розділ', widget: 'string'}
       - { name: title_left, label: 'Заголовок 1 рядок', widget: 'string' }
