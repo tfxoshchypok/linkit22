@@ -6,7 +6,7 @@ publish_mode: editorial_workflow
 collections:
   - name: 'information'
     label: 'Інформація про школу'
-    folder: '_information/'
+    folder: '_information'
     fields:
       - { name: title, label: 'Розділ', widget: 'string'}
       - { name: title_left, label: 'Заголовок 1 рядок', widget: 'string' }
