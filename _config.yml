@@ -44,7 +44,9 @@ plugins:
 #
 collections:
   courses:
-     output: true
+    output: true
+  information:
+    output: false
 exclude:
   - .idea/
   - .sass-cache/

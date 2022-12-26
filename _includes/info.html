@@ -1,38 +1,17 @@
 <div class="in-school container" id="about-school">
   <div class="wrapper">
     <h2>У школі «Лінк»</h2>
-
     <div class="in-school__inner">
-      <article class="in-school__item">
-        <img alt="" src="static/images/common/people.png">
-        <h3>Невеликі <br>навчальні групи</h3>
-        <p>8-10 учнів и професійні
-          <br>викладачі.Оптимальна кількіть
-          <br>учнів для ефективної роботи з
-          <br>кожною дитиною індивідуально
-        </p>
-      </article>
 
+    {% for info in site.information %}
       <article class="in-school__item">
-        <img alt="" src="static/images/common/pc.png">
-        <h3>Сучасний класс <br>під керівництвом PiNet</h3>
-        <p>Клас на базі сучасної екосистеми
-          <br>PiNet для навчальних мереж. Рабочі
-          <br>ісця дітей обладнані компютером
-          <br>Raspberry Pi і мікроконтролером
-          <br><span>micro:bit</span>
+        <img src="static/images/common/{{ info.icon }}.png">
+        <h3>{{ info.title_left }} <br>{{ info.title_right }}</h3>
+        <p>
+          {{ info.content }}
         </p>
       </article>
-
-      <article class="in-school__item">
-        <img alt="" src="static/images/common/men.png">
-        <h3>Професійні педагоги <br>з практичним досвідом</h3>
-        <p>Усі вчителя у нащій школі
-          <br>мають педагогічну освіту та
-          <br>обов’язковий практичний
-          <br>досвід програмування
-        </p>
-      </article>
+    {% endfor %}
 
     </div>
   </div>

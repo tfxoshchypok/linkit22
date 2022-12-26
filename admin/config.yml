@@ -2,9 +2,20 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
+publish_mode: editorial_workflow
 collections:
-  - name: 'courses'
-    label: 'courses'
-    folder: '_courses/'
+  - name: 'information'
+    label: 'Інформація про школу'
+    folder: '_/information'
     fields:
+      - { name: title_left, label: 'Заголовок 1 рядок', widget: 'string' }
+      - { name: title_right, label: 'Заголовок 2 рядок', widget: 'string' }
+      - { name: icon, label: 'Іконка', widget: 'string' }
+      - { name: body, label: 'Текст', widget: 'markdown'}
+  - name: 'courses'
+    label: 'Наші Курси'
+    folder: '_courses/'
+    create: true
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'course'}
       - { name: Title }
