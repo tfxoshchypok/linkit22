@@ -5,6 +5,7 @@ media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
 collections:
   - name: 'information'
+    extension: 'html'
     label: 'Інформація про школу'
     description: 'description'
     folder: '_information'
