@@ -7,10 +7,9 @@ collections:
   - name: 'information'
     extension: 'html'
     format: 'yaml-frontmatter'
-    label: 'Інформація про школу'
-    description: 'description'
+    label: 'Інформація'
+    description: 'інформаційні колонки про школу'
     folder: '_information'
-    create: true
     fields:
       - { name: title, label: 'Розділ', widget: 'string'}
       - { name: title_left, label: 'Заголовок 1 рядок', widget: 'string' }
@@ -19,8 +18,10 @@ collections:
       - { name: body, label: 'Текст', widget: 'markdown'}
   - name: 'courses'
     label: 'Наші Курси'
-    folder: '_courses/'
+    extension: 'html'
+    format: 'yaml-frontmatter'
+    description: 'окремі сторінки про кожен курс'
+    folder: '_courses'
     create: true
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'course'}
-      - { name: Title }
+      - { name: title, label: 'Назва курсу', widget: 'string' }
