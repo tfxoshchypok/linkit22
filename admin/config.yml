@@ -6,6 +6,7 @@ publish_mode: editorial_workflow
 collections:
   - name: 'information'
     extension: 'html'
+    format: 'yaml-frontmatter'
     label: 'Інформація про школу'
     description: 'description'
     folder: '_information'
