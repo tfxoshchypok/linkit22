@@ -5,9 +5,9 @@ media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
 collections:
   - name: 'information'
+    label: 'Інформація'
     extension: 'html'
     format: 'yaml-frontmatter'
-    label: 'Інформація'
     description: 'інформаційні колонки про школу'
     folder: '_information'
     fields:
