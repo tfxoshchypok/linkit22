@@ -24,4 +24,16 @@ collections:
     folder: '_courses'
     create: true
     fields:
+      - { name: layout, label: 'Layout', widget: 'hidden' }
       - { name: title, label: 'Назва курсу', widget: 'string' }
+      - { name: price, label: 'Вартість, грн', widget: 'number', value_type: 'int' }
+      - name: icon
+        label: 'Іконка'
+        widget: 'select'
+        options:
+          - { label: 'Коло', value: 0 }
+          - { label: 'Стілки', value: 1 }
+          - { label: 'Кілька кіл', value: 2 }
+          - { label: 'Півкола', value: 3 }
+          - { label: 'Квадрат&Коло', value: 4 }
+      - { name: start_at, label: 'Початок з', widget: 'datetime', picker_utc: true, format: 'D MMMM'}

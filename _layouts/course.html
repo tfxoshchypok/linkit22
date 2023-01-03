@@ -1,0 +1,169 @@
+---
+layout: default
+---
+<div class="intro-second-screen container">
+  <div class="wrapper">
+    <div class="text-side">
+      <p class="start-label">
+        Старт {{ page.start_at }}
+      </p>
+      <h1 class="default-title">
+        Курс <br>
+        <span class="red-text">
+                  «{{ page.title }}»
+                  <button class="default-title-arrow">
+                    <img alt="" src="/static/images/common/arrow.svg">
+                  </button>
+                </span>
+      </h1>
+      <p class="default-subtitle">
+        Перший  урок безкоштовний!
+        <span class="default-subtitle-stickers">
+                  🔥 😉
+                </span>
+      </p>
+      <a class="default-button">
+        Записатися на курс
+      </a>
+      <div class="default-group">
+        <div class="default-group__item">
+          <img class="default-group__icon" alt="" src="/static/images/common/person-icon.svg">
+          <p class="default-group__text">
+            Діти {{ page.start_age }}-{{ page.finish_age }} років
+          </p>
+        </div>
+        <div class="default-group__item bordered">
+          <img class="default-group__icon" alt="" src="/static/images/common/study-icon.svg">
+          <p class="default-group__text">
+            {{ page.lessons }} уроків по {{ page.lesson_time }}
+          </p>
+        </div>
+        <div class="default-group__item">
+          <img class="default-group__icon" alt="" src="/static/images/common/clock-icon.svg">
+          <p class="default-group__text">
+            {{ page.lessons_in_week }} уроки в тиждень
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="expectation-block container">
+  <div class="wrapper">
+    <div class="title-col">
+      <img class="expectation-block__icon" alt="" src="/static/images/common/courses-icon-{{ page.icon }}.svg">
+      <h4 class="expectation-block__title">
+        Навички і знання, які отримає дитина
+      </h4>
+    </div>
+    <div class="text-col">
+      <p class="expectation-block__text">
+        {{ page.skills }}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="program-block container">
+  <div class="wrapper">
+    <p class="default-mini-title">
+      чого навчиться дитина
+    </p>
+    <h4 class="default-block-title">
+      Повна програма курсу
+    </h4>
+    <div class="program-list">
+      {% for item in page.program %}
+      <div class="program-item">
+        <img class="program-item__icon" alt="" src="/static/images/common/done-icon.svg">
+        <div class="program-item__body">
+          <div class="program-item__count">
+            Тема {{ forloop.index }}
+          </div>
+          <p class="program-item__title">
+            {{ item }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="course-info-block container">
+  <div class="wrapper">
+    <div class="course-info-body">
+      <div class="course-info-body__content">
+        <div class="course-info-body__wrapper">
+          <div class="start-label">
+            Старт {{ page.start_at }}
+          </div>
+          <h4 class="course-info-block__title">
+            Детальна iнформацiя про курс
+          </h4>
+        </div>
+        <span class="course-info-block__title red-title">
+                  {{ page.title }}
+                </span>
+        <div class="course-info-block__hashtags">
+          {% for tag in page.tags %}
+          <span>#{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="course-info-body__desc data-label">
+        <img class="data-label__icon" alt="" src="/static/images/common/info-icon.svg">
+        <p class="data-label__text">
+          {{ page.information }}
+        </p>
+      </div>
+    </div>
+    <div class="course-info-footer">
+      <div class="course-info-items">
+        <div class="course-info-item">
+          <strong> /1</strong><span>Діти {{ page.start_age }}-{{ page.finish_age }} років</span>
+        </div>
+        <div class="course-info-item">
+          <strong> /2</strong>
+          <span>{{ page.lessons_in_week}} уроки в тиждень</span>
+        </div>
+        <div class="course-info-item">
+          <strong> /3</strong><span>{{ page.lessons }} уроків по {{ page.lesson_time }}</span>
+        </div>
+        <div class="course-info-item">
+          <strong> /4</strong><span>{{ page.end_block_information }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="price-block container">
+  <div class="wrapper">
+    <div class="price-card">
+      <img class="price-card__icon" alt="" src="/static/images/common/courses-icon-{{ page.icon }}.svg">
+      <p class="default-mini-title">
+        курс
+      </p>
+      <p class="default-block-title">
+        «{{ page.title }}»
+      </p>
+      <div class="price-card__footer">
+        <div class="price-card__text">
+          Набiр лише  до <span class="red-text">{{ page.start_at }}! </span>
+          <br>Не прогав, встигни записатись!
+        </div>
+        <div class="price-card__wrapper">
+          <div class="price-card__price price-label">
+            <div class="price-label__value">
+              від {{ page.price }} ₴ / курс
+            </div>
+            <!--            <div class="price-label__payments">-->
+            <!--              при оплаті <a class="price-label__switcher" href="#">одним платежем</a>-->
+            <!--            </div>-->
+          </div>
+          <div class="price-card__button default-button">
+            Записатися на курс
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -622,13 +622,13 @@ template {
     -webkit-box-shadow: none;
     box-shadow: none; }
     .header.open .mobile-nav-switcher {
-      background-image: url(projects/link2/static/images/common/close-menu-bar.svg); }
+      background-image: url(/static/images/common/close-menu-bar.svg); }
   .header .mobile-nav-switcher {
     display: none;
     height: 48px;
     width: 48px;
     margin-left: auto;
-    background-image: url(projects/link2/static/images/common/menu-bar.svg);
+    background-image: url(/static/images/common/menu-bar.svg);
     background-size: 100% 100%; }
     @media screen and (max-width: 730px) {
       .header .mobile-nav-switcher {
@@ -746,7 +746,7 @@ template {
             display: block;
             width: 230px;
             height: 65px;
-            background: url(projects/link2/static/images/common/fs-figure.svg);
+            background: url(/static/images/common/fs-figure.svg);
             background-size: 100% auto;
             top: 0;
             position: absolute; } }
@@ -851,7 +851,7 @@ template {
   background-color: #04101C;
   padding-top: 107px;
   padding-bottom: 60px;
-  background-image: url(projects/link2/static/images/common/intro-sc-bg.svg);
+  background-image: url(/static/images/common/intro-sc-bg.svg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 680px auto; }
@@ -866,7 +866,7 @@ template {
       background-size: 188px auto;
       padding-top: 60px;
       padding-bottom: 77px;
-      background-image: url(projects/link2/static/images/common/intro-sc-bg-mb.svg);
+      background-image: url(/static/images/common/intro-sc-bg-mb.svg);
       background-position: top -80px right; } }
   @media screen and (max-width: 730px) {
     .intro-second-screen {
@@ -2399,7 +2399,7 @@ template {
     .price-card {
       padding: 44px 18px 38px 18px; } }
   .price-card__icon {
-    width: 61px;
+    width: 43px;
     margin-bottom: 14px; }
     @media screen and (max-width: 480px) {
       .price-card__icon {

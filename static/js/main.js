@@ -34,11 +34,11 @@ buttons.forEach(function (button) {
       backdrop.classList.add('active');
     }
   });
-  popup.querySelector('.default-popup__close').addEventListener('click', function () {
+  popup?.querySelector('.default-popup__close')?.addEventListener('click', function () {
     popup.classList.remove('active');
     backdrop.classList.remove('active');
   });
-  backdrop.addEventListener('click', function () {
+  backdrop?.addEventListener('click', function () {
     popup.classList.remove('active');
     backdrop.classList.remove('active');
   });
