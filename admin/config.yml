@@ -36,4 +36,27 @@ collections:
           - { label: 'Кілька кіл', value: 2 }
           - { label: 'Півкола', value: 3 }
           - { label: 'Квадрат&Коло', value: 4 }
-      - { name: start_at, label: 'Початок з', widget: 'datetime', picker_utc: true, format: 'D MMMM'}
+      - { name: start_at, label: 'Початок з', widget: 'string' }
+      - { name: start_age, label: 'Вік учнів від', widget: 'number', value_type: 'int', min: 9, max: 17 }
+      - { name: finish_age, label: 'Вік учнів до', widget: 'number', value_type: 'int', min: 9, max: 17 }
+      - { name: lessons, label: 'Кількість уроків', widget: 'number', value_type: 'int', min: 1 }
+      - name: lesson_time
+        label: ''
+        widget: 'select'
+        options:
+          - { label: '45 хвилин', value: '45 хвилин' }
+          - { label: 'одна година', value: 'годині' }
+          - { label: 'дві години', value: 'дві години' }
+      - name: lessons_in_week
+        label: 'Кількість занять на тиждень'
+        widget: 'select'
+        options:
+          - { label: 'одне', value: 1 }
+          - { label: 'два', value: 2 }
+          - { label: 'три', value: 3 }
+          - { label: 'чотири', value: 4 }
+      - { name: skills, label: 'Опис навичок і вмінь', widget: 'text' }
+      - name: program
+        label: 'Програма курсу'
+        widget: 'list'
+        field: { name: item, label: 'Пункт', widget: 'string'}
