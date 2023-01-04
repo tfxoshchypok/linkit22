@@ -72,7 +72,7 @@ layout: default
       Повна програма курсу
     </h4>
     <div class="program-list">
-      {% for item in page.program %}
+      {% for row in page.program %}
       <div class="program-item">
         <img class="program-item__icon" alt="" src="/static/images/common/done-icon.svg">
         <div class="program-item__body">
@@ -80,7 +80,7 @@ layout: default
             Тема {{ forloop.index }}
           </div>
           <p class="program-item__title">
-            {{ item }}
+            {{ row.item }}
           </p>
         </div>
       </div>
