@@ -41,7 +41,7 @@ collections:
       - { name: finish_age, label: 'Вік учнів до', widget: 'number', value_type: 'int', min: 9, max: 17 }
       - { name: lessons, label: 'Кількість уроків', widget: 'number', value_type: 'int', min: 1 }
       - name: lesson_time
-        label: ''
+        label: 'Тривалість'
         widget: 'select'
         options:
           - { label: '45 хвилин', value: '45 хвилин' }
@@ -63,4 +63,12 @@ collections:
         label_singular: 'пункт програми'
         summary: '{{fields.item}}'
         field: { name: item, label: 'Пункт', widget: 'string' }
+      - { name: information, label: 'Інформація', widget: 'markdown', modes: ['raw', 'rich_text'] }
+      - { name: end_block_information, label: 'Додатково', widget: 'text'}
+      - name: tags
+        label: 'Теги'
+        widget: 'list'
+        add_to_top: false
+        field: { name: tag, label: 'Назва', widget: 'string'}
+
 
