@@ -60,7 +60,7 @@ collections:
         label: 'Програма курсу'
         widget: 'list'
         add_to_top: false
-        label_singular: 'Добавити пункт програми'
+        label_singular: 'пункт програми'
         summary: '{{item}}'
         field: { name: item, label: 'Пункт', widget: 'string' }
 
