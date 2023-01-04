@@ -59,4 +59,5 @@ collections:
       - name: program
         label: 'Програма курсу'
         widget: 'list'
+        summary: {{ fields.item }}
         field: { name: item, label: 'Пункт', widget: 'string'}
