@@ -61,6 +61,6 @@ collections:
         widget: 'list'
         add_to_top: false
         label_singular: 'пункт програми'
-        summary: '{{fields.item.item}}'
+        summary: '{{fields.item}}'
         field: { name: item, label: 'Пункт', widget: 'string' }
 
