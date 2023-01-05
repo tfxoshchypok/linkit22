@@ -25,7 +25,6 @@ collections:
     folder: '_courses'
     create: true
     label_singular: 'курс'
-    preview_path: '/{{slug}}.{{extension}}'
     editor:
       preview: false
     fields:
@@ -73,6 +72,7 @@ collections:
       - name: tags
         label: 'Теги'
         widget: 'list'
+        label_singular: 'тег'
         add_to_top: false
         field: { name: tag, label: 'Назва', widget: 'string'}
 
