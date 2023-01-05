@@ -16,6 +16,7 @@ collections:
       - { name: title_right, label: 'Заголовок 2 рядок', widget: 'string' }
       - { name: icon, label: 'Іконка', widget: 'string' }
       - { name: body, label: 'Текст', widget: 'markdown'}
+
   - name: 'courses'
     label: 'Наші Курси'
     extension: 'html'
@@ -23,6 +24,10 @@ collections:
     description: 'окремі сторінки про кожен курс'
     folder: '_courses'
     create: true
+    label_singular: 'курс'
+    preview_path: '/{{title}}.{{extension}}'
+    editor:
+      preview: false
     fields:
       - { name: layout, label: 'Layout', widget: 'hidden' }
       - { name: title, label: 'Назва курсу', widget: 'string' }
