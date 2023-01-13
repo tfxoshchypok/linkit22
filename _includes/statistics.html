@@ -4,21 +4,12 @@
   <div class="wrapper">
     <h2></h2>
     <div class="statistics-inner">
-
+      {% for item in site.statistics %}
       <div class="statistics-inner__item">
-        <div class="num">{{ site.data.statistics.lessons }}</div>
-        <div class="text">Проведено  практичних <br>занять</div>
+        <div class="num">{{ item.value }}</div>
+        <div class="text">{{ item.title }}</div>
       </div>
-
-      <div class="statistics-inner__item">
-        <div class="num">{{ site.data.statistics.groups }}</div>
-        <div class="text">Набрано груп на різні <br>IT напрямки</div>
-      </div>
-
-      <div class="statistics-inner__item">
-        <div class="num">{{ site.data.statistics.students }}</div>
-        <div class="text">Учнів пройшли курс <br>в IT-школі «Лінк»</div>
-      </div>
+      {% endfor %}}
     </div>
   </div>
 </div>

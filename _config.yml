@@ -47,6 +47,8 @@ collections:
     output: true
   information:
     output: false
+  statistics:
+    output: false
 exclude:
   - .idea/
   - .sass-cache/
