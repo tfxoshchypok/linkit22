@@ -1,13 +1,3 @@
-<h3>Популярні питання батьків</h3>
-<div class="questions-answers">
-
-  {% for faq in site.data.questions %}
-
-  <div class="questions-answers__item">
-    <div class="questions-answers__item-header">{{ faq.question }}</div>
-    <div class="questions-answers__item-body">{{ faq.answer }}</div>
-  </div>
-
+  {% for page in site.faq %}
+    {{ page.content }}
   {% endfor %}
-
-</div>
