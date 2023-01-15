@@ -51,6 +51,8 @@ collections:
     output: false
   faq:
     output: false
+  contacts:
+    output: false
 exclude:
   - .idea/
   - .sass-cache/

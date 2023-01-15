@@ -102,7 +102,6 @@ collections:
     format: 'yaml-frontmatter'
     description: 'питання/відповіді про школу'
     folder: '_faq'
-    add_to_top: false
     fields:
       - { name: title, label: 'Заголовок розділу', widget: 'string' }
       - name: 'items'
@@ -116,3 +115,16 @@ collections:
     editor:
       preview: false
 
+  # контактна інформація
+  - name: 'contacts'
+    label: 'Контактна інформація'
+    extension: 'html'
+    format: 'yaml-frontmatter'
+    description: 'телефон, адреса, соціальні мережі'
+    folder: '_contacts'
+    fields:
+      - { name: title, label: 'Заголовок розділу', widget: 'string' }
+      - { name: description, label: 'Гасло', widget: 'text' }
+      - { name: phone_number, label: 'Номер телефону', widget: 'string' }
+      - { name: fb_link, label: 'Фейсбук сторінка', widget: 'string' }
+      - { name: address, label: 'Адреса', widget: 'text' }
