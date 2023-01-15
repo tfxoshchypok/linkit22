@@ -4,6 +4,7 @@ backend:
 media_folder: 'assets/uploads'
 publish_mode: editorial_workflow
 collections:
+  # інформація про школу
   - name: 'information'
     label: 'Інформація'
     extension: 'html'
@@ -17,6 +18,7 @@ collections:
       - { name: icon, label: 'Іконка', widget: 'string' }
       - { name: body, label: 'Текст', widget: 'markdown'}
 
+  # курси школи та послуги
   - name: 'courses'
     label: 'Наші Курси'
     extension: 'html'
@@ -90,6 +92,27 @@ collections:
       - { name: id, label: 'ID', widget: 'string'}
       - { name: title, label: 'Назва показника', widget: 'string' }
       - { name: value, label: 'Значення показника', widget: 'number' }
+    editor:
+      preview: false
+
+  # запитання батьків
+  - name: 'faq'
+    label: 'Запитання батьків'
+    extension: 'html'
+    format: 'yaml-frontmatter'
+    description: 'питання/відповіді про школу'
+    folder: '_faq'
+    add_to_top: false
+    fields:
+      - { name: title, label: 'Заголовок розділу', widget: 'string' }
+      - name: 'items'
+        label: 'Перелік запитань'
+        widget: 'list'
+        add_to_top: false
+        label_singular: 'faq'
+        fields:
+          - { name: 'question', label: 'Запитання', widget: 'string'}
+          - { name: 'answer', label: 'Відповідь', widget: 'text'}
     editor:
       preview: false
 
