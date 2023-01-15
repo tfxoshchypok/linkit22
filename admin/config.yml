@@ -128,3 +128,4 @@ collections:
       - { name: phone_number, label: 'Номер телефону', widget: 'string' }
       - { name: fb_link, label: 'Фейсбук сторінка', widget: 'string' }
       - { name: address, label: 'Адреса', widget: 'text' }
+      - { name: location, label: 'Положення на карті', widget: map }
