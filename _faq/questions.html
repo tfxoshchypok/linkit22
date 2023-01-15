@@ -2,3 +2,16 @@
 title: Популярні питання батьків
 items:
 ---
+<h3>{{ page.title }}</h3>
+<div class="questions-answers">
+
+  {% for faq in page.items %}
+
+  <div class="questions-answers__item">
+    <div class="questions-answers__item-header">{{ faq.question }}</div>
+    <div class="questions-answers__item-body">{{ faq.answer }}</div>
+  </div>
+
+  {% endfor %}
+
+</div>
