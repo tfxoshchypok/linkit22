@@ -76,6 +76,7 @@ collections:
         add_to_top: false
         field: { name: tag, label: 'Назва', widget: 'string'}
 
+  # статистика школи
   - name: 'statistics'
     label: 'Статистика школи'
     extension: 'html'
@@ -83,8 +84,12 @@ collections:
     description: 'статистична інформація про школу'
     folder: '_statistics'
     identifier_field: 'id'
+    create: true
+    add_to_top: false
     fields:
       - { name: id, label: 'ID', widget: 'string'}
       - { name: title, label: 'Назва показника', widget: 'string' }
       - { name: value, label: 'Значення показника', widget: 'number' }
+    editor:
+      preview: false
 
