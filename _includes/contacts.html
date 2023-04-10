@@ -1,34 +1,3 @@
-<div class="about container" id="contacts">
-  <div class="wrapper">
-    <div class="contacts">
-      <h2>Контакти</h2>
-
-      <p>Залишились запитання? <br>Звертайтесь!</p>
-      <div class="contacts-data">
-        <div class="contacts-data__container">
-          <a class="contacts-data__item" href="tel:068 500 6977">
-            <img alt="" src="/static/images/common/tel.svg">
-            068 500 6977
-          </a>
-          <a class="contacts-data__item" href="https://www.facebook.com/linkitschool">
-            <img alt="" src="/static/images/common/facebook.svg">
-            Facebook
-          </a>
-        </div>
-
-        <div class="contacts-data__container">
-              <span class="contacts-data__item">
-                <img alt="" src="/static/images/common/map.svg">
-                вул. Івана Франка, 28 - 2, <br>Дрогобич 82100
-              </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.836985804495!2d23.497920915924354!3d49.35523387354792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a4c18b2c4c293%3A0xe9acc70839216336!2z0YPQuy4g0JjQstCw0L3QsCDQpNGA0LDQvdC60L4sIDI4LCDQlNGA0L7Qs9C-0LHRi9GHLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDgyMTAw!5e0!3m2!1sru!2sua!4v1631183383263!5m2!1sru!2sua" width="100%" height="366" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-    <h2>Контакты</h2>
-  </div>
-</div>
+{% for page in site.contacts %}
+  {{ page.content }}
+{% endfor %}
