@@ -129,3 +129,18 @@ collections:
       - { name: fb_link, label: 'Фейсбук сторінка', widget: 'string' }
       - { name: address, label: 'Адреса', widget: 'text' }
       - { name: location, label: 'Положення на карті', widget: map }
+
+  - name: 'settings'
+    label: 'Налаштування сайта'
+    files:
+      - name: 'partials'
+        label: 'Розділи сайту'
+        file: 'data/partials.yml'
+        fields:
+          - {label: 'Банер', name: banner, widget: 'boolean', default: true}
+          - {label: 'Інформація', name: info, widget: 'boolean', default: true}
+          - {label: 'Курси', name: courses, widget: 'boolean', default: true}
+          - {label: 'Статистика', name: statistic, widget: 'boolean', default: true}
+          - {label: 'Запитання Батьків', name: faq, widget: 'boolean', default: true}
+          - {label: 'Галерея', name: gallery, widget: 'boolean', default: true}
+          - {label: 'Вчителі', name: teachers, widget: 'boolean', default: true}
