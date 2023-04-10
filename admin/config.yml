@@ -143,4 +143,4 @@ collections:
           - {label: 'Статистика', name: statistic, widget: 'boolean', default: true}
           - {label: 'Запитання Батьків', name: faq, widget: 'boolean', default: true}
           - {label: 'Галерея', name: gallery, widget: 'boolean', default: true}
-          - {label: 'Вчителі', name: teachers, widget: 'boolean', default: true}
+          - {label: 'Ментори', name: mentors, widget: 'boolean', default: true}
