@@ -135,7 +135,7 @@ collections:
     files:
       - name: 'partials'
         label: 'Розділи сайту'
-        file: 'data/partials.yml'
+        file: '_data/partials.yml'
         fields:
           - {label: 'Банер', name: banner, widget: 'boolean', default: true}
           - {label: 'Інформація', name: info, widget: 'boolean', default: true}
