@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{% include banner.html %}
-{% include info.html %}
-{% include courses.html %}
-{% include statistics.html %}
-{% include faq.html %}
-{% include gallery.html %}
+{% if site.data.partials.banner %}{% include banner.html %}{% endif %}
+{% if site.data.partials.info %}{% include info.html %}{% endif %}
+{% if site.data.partials.courses %}{% include courses.html %}{% endif %}
+{% if site.data.partials.statistic %}{% include statistics.html %}{% endif %}
+{% if site.data.partials.faq or site.data.partials.mentors %}{% include faq.html %}{% endif %}
+{% if site.data.partials.gallery %}{% include gallery.html %}{% endif %}

@@ -1,8 +1,8 @@
 <div class="faq container">
   <div class="wrapper">
 
-    {% include mentors.html %}
-    {% include questions.html %}
+    {% if site.data.partials.mentors %}{% include mentors.html %}{% endif %}
+    {% if site.data.partials.faq %}{% include questions.html %}{% endif %}
 
   </div>
 </div>
