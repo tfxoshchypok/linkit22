@@ -1,7 +1,7 @@
 banner: true
 info: true
 courses: true
-statistic: true
+statistic: false
 faq: false
 gallery: false
 mentors: false
