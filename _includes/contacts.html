@@ -1,3 +1,40 @@
-{% for page in site.contacts %}
-  {{ page.content }}
-{% endfor %}
+---
+title: Контакти
+description: Залишились запитання?<br>Звертайтесь!
+phone_number: 068 500 6977
+fb_link: https://www.facebook.com/linkitschool
+address: вул. Івана Франка, 28 кв. 2, <br>Дрогобич 82100
+location: '{"type":"Point","coordinates":[23.5001929,49.3551891]}'
+---
+<div class="about container" id="contacts">
+  <div class="wrapper">
+    <div class="contacts">
+      <h2>{{ page.title }}</h2>
+
+      <p>{{ page.description }}</p>
+      <div class="contacts-data">
+        <div class="contacts-data__container">
+          <a class="contacts-data__item" href="tel:{{ page.phone_number }}">
+            <img alt="" src="/static/images/common/tel.svg">
+            {{ page.phone_number }}
+          </a>
+          <a class="contacts-data__item" href="{{ page.fb_link }}">
+            <img alt="" src="/static/images/common/facebook.svg">
+            Facebook
+          </a>
+        </div>
+
+        <div class="contacts-data__container">
+              <span class="contacts-data__item">
+                <img alt="" src="/static/images/common/map.svg">
+                {{ page.address }}
+              </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5197.674380940642!2d23.50011!3d49.35523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a4d30b73ab389%3A0x801ce036acb6e72e!2zTGluayBJVCBTY2hvb2wuINCU0LjRgtGP0YfQsCDQhtCiINCo0LrQvtC70LA!5e0!3m2!1suk!2sru!4v1681144879555!5m2!1suk!2sru" width="100%" height="366" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
