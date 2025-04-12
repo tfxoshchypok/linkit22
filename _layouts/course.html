@@ -17,7 +17,8 @@ layout: default
           </svg>
         </div>
       </div>
-      <form class="default-popup__body">
+      <form class="default-popup__body" netlify>
+        <input type="hidden" name="subscribe">  
         <p class="default-popup__title">
           Реєстрація
         </p>
@@ -29,9 +30,9 @@ layout: default
         <span class="default-popup__warn">
           Заповніть будь-ласка поля форми!
         </span>
-        <input class="default-input" placeholder="Ім'я">
-        <input class="default-input" placeholder="Номер телефону">
-        <button class="default-button">зареєструватися</button>
+        <input type="text" class="default-input" placeholder="Ім'я" required>
+        <input class="default-input" placeholder="Номер телефону" required pattern="(068|067|066|050|073|063|093|077)\s\d{3}\s?\d{2}\s?\d{2}">
+        <button type="submit" class="default-button">зареєструватися</button>
       </form>
     </div>
 
