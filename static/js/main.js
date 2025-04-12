@@ -27,8 +27,8 @@ var buttons = document.querySelectorAll('.default-button');
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
     if (popup.classList.contains('active')) {
-      popup.classList.remove('active');
-      backdrop.classList.remove('active');
+      // popup.classList.remove('active');
+      // backdrop.classList.remove('active');
     } else {
       popup.classList.add('active');
       backdrop.classList.add('active');
