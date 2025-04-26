@@ -691,17 +691,17 @@ template {
       font-family: "IBM Plex Sans", sans-serif;
       text-decoration: none;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 10px;
       line-height: 100%;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #fff;
-      padding-top: 17px;
-      padding-bottom: 15px;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-top: 12px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
       background: #F86F68;
-      border-radius: 30px;
+      border-radius: 20px;
       border: 1px solid #F86F68; }
       .header div.s-action a:hover {
         background: white;
