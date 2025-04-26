@@ -681,11 +681,13 @@ template {
       text-decoration: underline; }
 
  .header div.s-action {
+	 diplay: none;
 	 text-align: center;
   }
 @media screen and (max-width: 730px) {
 	.header div.s-action {
-	 
+	   display: block;
+	   width: 75%;	
   }
 }
 .header div.s-action a, .nav-top .ss-action {
