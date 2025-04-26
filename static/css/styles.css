@@ -669,12 +669,12 @@ template {
     font-size: 16px;
     line-height: 21px;
     text-decoration: none;
-    margin-right: 118px; }
+    margin-right: 70px; }
     @media screen and (max-width: 1060px) {
       .nav-top__link {
         font-size: 14px;
         line-height: 18px;
-        margin-right: 78px; } }
+        margin-right: 35px; } }
     .nav-top__link:last-child {
       margin-right: 0; }
     .nav-top__link:hover {
