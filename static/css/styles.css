@@ -681,7 +681,7 @@ template {
       text-decoration: underline; }
 
  .header div.s-action {
-	 diplay: none;
+	 display: none;
 	 text-align: center;
   }
 @media screen and (max-width: 730px) {
