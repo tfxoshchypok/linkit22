@@ -678,6 +678,10 @@ template {
       margin-right: 0; }
     .nav-top__link:hover {
       text-decoration: underline; }
+ .header div.s-action {
+	 text-align: center;
+	 width: 80%
+ }
 
 .intro-screen {
   margin-top: 73px;
