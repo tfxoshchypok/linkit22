@@ -687,6 +687,25 @@ template {
 	 width: 75%;
   }
 }
+.header div.s-action a {
+      font-family: "IBM Plex Sans", sans-serif;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #fff;
+      padding-top: 17px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background: #F86F68;
+      border-radius: 30px;
+      border: 1px solid #F86F68; }
+      .header div.s-action a:hover {
+        background: white;
+        color: #F86F68; }
 
 .intro-screen {
   margin-top: 73px;
