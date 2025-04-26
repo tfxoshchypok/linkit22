@@ -659,7 +659,8 @@ template {
   margin-left: auto; }
   @media screen and (max-width: 1060px) {
     .nav-top {
-      margin-right: 75px; } }
+      margin-left: 45px;
+      margin-right: 15px; } }
   @media screen and (max-width: 730px) {
     .nav-top {
       display: none; } }
