@@ -681,11 +681,12 @@ template {
       text-decoration: underline; }
 
  .header div.s-action {
+	 align-self: end;
 	 text-align: center;
   }
 @media screen and (max-width: 730px) {
 	.header div.s-action {
-	 width: 75%;
+	 
   }
 }
 .header div.s-action a {
