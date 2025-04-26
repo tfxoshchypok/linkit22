@@ -678,10 +678,15 @@ template {
       margin-right: 0; }
     .nav-top__link:hover {
       text-decoration: underline; }
+
  .header div.s-action {
 	 text-align: center;
-	 width: 80%
- }
+  }
+@media screen and (max-width: 730px) {
+	.header div.s-action {
+	 width: 75%;
+  }
+}
 
 .intro-screen {
   margin-top: 73px;
