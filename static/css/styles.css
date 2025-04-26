@@ -688,7 +688,7 @@ template {
 	 
   }
 }
-.header div.s-action a {
+.header div.s-action a, .nav-top .ss-action {
       font-family: "IBM Plex Sans", sans-serif;
       text-decoration: none;
       font-weight: bold;
