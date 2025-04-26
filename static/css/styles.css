@@ -791,8 +791,11 @@ template {
       border-radius: 30px;
       border: 1px solid #F86F68; }
       .intro-screen .h1-side a:hover {
-        background: transparent;
+        background: rgba(0,0,0,0.5);
         color: #F86F68; }
+       .intro-screen .h1-side a.courses {
+	 background: #1fdd1f       
+       }
   .intro-screen .figure-side {
     width: 100%;
     max-width: 442px;
