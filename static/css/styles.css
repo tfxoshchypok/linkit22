@@ -818,6 +818,7 @@ template {
       padding-bottom: 15px;
       padding-left: 50px;
       padding-right: 50px;
+      margin-ridht: 50px;	    
       background: #F86F68;
       border-radius: 30px;
       border: 1px solid #F86F68; }
@@ -825,13 +826,23 @@ template {
         background: white;
         color: #F86F68; }
        .intro-screen .h1-side a.courses {
-	 background: #1fdd1f;
-	 border: 1px solid #1fdd1f;      
+	 background: #cdf9cd;
+	 border: 1px solid #cdf9cd;      
        }
        .intro-screen .h1-side a.courses:hover {
 	 background: white;
-         color: #1fdd1f;      
+         color: #cdf9cd;      
        }
+   @media screen and (max-width: 440px) {
+	.intro-screen .h1-side a {
+	  float: left;	
+	}
+
+	.intro-screen .h1-side a.courses {
+	  margin-top: 12px;	
+	}   
+   }
+
   .intro-screen .figure-side {
     width: 100%;
     max-width: 442px;
