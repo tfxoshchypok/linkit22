@@ -827,11 +827,13 @@ template {
         color: #F86F68; }
        .intro-screen .h1-side a.courses {
 	 background: #cdf9cd;
-	 border: 1px solid #cdf9cd;      
+	 border: 1px solid #cdf9cd;
+	 color: #646464;      
        }
        .intro-screen .h1-side a.courses:hover {
 	 background: white;
-         color: #cdf9cd;      
+	 border-color: #015f01;      
+         color: #015f01;      
        }
    @media screen and (max-width: 440px) {
 	.intro-screen .h1-side a {
