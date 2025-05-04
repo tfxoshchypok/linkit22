@@ -2813,6 +2813,13 @@ template {
 	   color: white;
 	   font-weight: bold;
    }
+   .default-popup .default-popup__text .pop-course {
+	   color: #2dc11b;
+	   font-weight: bold;
+   }
+   .default-popup .default-popup__text strong {
+	   color: #F86F68;
+   }
   .default-popup .default-input {
     margin-bottom: 27px; }
   .default-popup .default-button {
