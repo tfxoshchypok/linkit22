@@ -25,8 +25,9 @@
         <span class="default-popup__warn">
           Заповніть будь-ласка поля форми!
         </span>
-        <input type="text" class="default-input" placeholder="Ім'я" required>
-        <input class="default-input" placeholder="Номер телефону" required pattern="(068|067|066|050|073|063|093|077)\s?\d{3}\s?\d{2}\s?\d{2}">
+        <input type="hidden" name="course" value="{{page.course}}">  
+        <input type="text" class="default-input" placeholder="Ім'я" name="name" required>
+        <input class="default-input" placeholder="Номер телефону" name="phone" required pattern="(068|067|066|050|073|063|093|077)\s?\d{3}\s?\d{2}\s?\d{2}">
         <input type="submit" class="default-button" value="зареєструватися">
       </form>
     </div>
