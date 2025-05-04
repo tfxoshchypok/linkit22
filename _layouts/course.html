@@ -65,31 +65,7 @@ layout: default
     </div>
   </div>
 </div>
-<div class="program-block container">
-  <div class="wrapper">
-    <p class="default-mini-title">
-      чого навчиться дитина
-    </p>
-    <h4 class="default-block-title">
-      Повна програма курсу
-    </h4>
-    <div class="program-list">
-      {% for row in page.program %}
-      <div class="program-item">
-        <img class="program-item__icon" alt="" src="/static/images/common/done-icon.svg">
-        <div class="program-item__body">
-          <div class="program-item__count">
-            Тема {{ forloop.index }}
-          </div>
-          <p class="program-item__title">
-            {{ row }}
-          </p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+
 <div class="course-info-block container">
   <div class="wrapper">
     <div class="course-info-body">
@@ -137,6 +113,33 @@ layout: default
     </div>
   </div>
 </div>
+
+<div class="program-block container">
+  <div class="wrapper">
+    <p class="default-mini-title">
+      чого навчиться дитина
+    </p>
+    <h4 class="default-block-title">
+      Повна програма курсу
+    </h4>
+    <div class="program-list">
+      {% for row in page.program %}
+      <div class="program-item">
+        <img class="program-item__icon" alt="" src="/static/images/common/done-icon.svg">
+        <div class="program-item__body">
+          <div class="program-item__count">
+            Тема {{ forloop.index }}
+          </div>
+          <p class="program-item__title">
+            {{ row }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 <div class="price-block container">
   <div class="wrapper">
     <div class="price-card">
