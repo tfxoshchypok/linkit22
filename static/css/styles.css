@@ -2727,7 +2727,7 @@ template {
     display: flex;
     padding: 27px 42px;
     padding-left: 60px;
-    background: #1C1C1C;
+    background: #2dc11b;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -2808,6 +2808,11 @@ template {
     @media screen and (max-width: 500px) {
       .default-popup__warn {
         margin-bottom: 18px; } }
+   .default-popup .pop-price {
+	   background: #F86F68;
+	   color: white;
+	   font-weight: bold;
+   }
   .default-popup .default-input {
     margin-bottom: 27px; }
   .default-popup .default-button {
