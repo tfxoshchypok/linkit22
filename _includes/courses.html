@@ -8,7 +8,7 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ind</p>
       </div>
 
-      {% for course in site.courses %}
+      {% for course in site.courses | where: "active", "true" %}
 
       <div class="courses-item">
         <img class="icon" alt="" src="/static/images/common/courses-icon-{{ course.icon }}.svg">
