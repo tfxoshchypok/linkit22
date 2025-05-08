@@ -8,8 +8,8 @@
         <p>Запрошуємо на наші курси, де діти вивчають програмування у цікавій, ігровій формі. Курси розроблені спеціально для юних програмістів віком від 9 до 16 років.</p>
       </div>
 
-      {% for course in (site.courses | where: "active", "true") %}
-
+      {% for course in site.courses %}
+      {% if course.active == "true" %}  
       <div class="courses-item">
         <img class="icon" alt="" src="/static/images/common/courses-icon-{{ course.icon }}.svg">
         <h3>«{{ course.title }}»</h3>
@@ -20,7 +20,7 @@
           </svg>
         </a>
       </div>
-
+      {% endif %}
       {% endfor %}
 
     </div>
