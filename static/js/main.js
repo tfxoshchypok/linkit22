@@ -23,7 +23,7 @@ menuSwitcher.addEventListener('click', function () {
 });
 var popup = document.querySelector('.first-popup');
 var backdrop = document.querySelector('#firstPopupBackdrop');
-var buttons = document.querySelectorAll('.default-button');
+var buttons = document.querySelectorAll('.subscribe-button');
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
     if (popup.classList.contains('active')) {
