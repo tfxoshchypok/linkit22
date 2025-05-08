@@ -9,7 +9,7 @@
       </div>
 
       {% for course in site.courses %}
-      {% if course.active == "true" %}  
+      {% if course.active == true %}  
       <div class="courses-item">
         <img class="icon" alt="" src="/static/images/common/courses-icon-{{ course.icon }}.svg">
         <h3>«{{ course.title }}»</h3>
