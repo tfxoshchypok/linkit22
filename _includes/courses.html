@@ -5,10 +5,10 @@
       <div class="courses-item">
         <h2> Курси ІТ-школи «Лінк»</h2>
 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ind</p>
+        <p>Запрошуємо на наші курси, де діти вивчають програмування у цікавій, ігровій формі. Курси розроблені спеціально для юних програмістів віком від 9 до 16 років.</p>
       </div>
 
-      {% for course in site.courses | where: "active", "true" %}
+      {% for course in (site.courses | where: "active", "true") %}
 
       <div class="courses-item">
         <img class="icon" alt="" src="/static/images/common/courses-icon-{{ course.icon }}.svg">
