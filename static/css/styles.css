@@ -646,8 +646,7 @@ template {
     margin-right: 10px; }
     @media screen and (max-width: 730px) {
       .logo__figure {
-        width: 27px;
-        margin-right: 0; } }
+        width: 27px;} }
   .logo__text {
     width: 60px; }
     @media screen and (max-width: 330px) {
@@ -2825,7 +2824,7 @@ template {
     margin-bottom: 27px; }
   .default-popup .default-button {
     margin-top: 40px;
-    border: none;
+    border: 1px solid #F86F68;
     width: 100%; }
     @media screen and (max-width: 500px) {
       .default-popup .default-button {
