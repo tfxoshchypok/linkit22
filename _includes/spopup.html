@@ -20,7 +20,8 @@
         <p class="default-popup__text">
           Набір в групи триває постійно. Навчання стартує по мірі комплектації груп (7-10 учнів). Приєднатися до групи можна протягом перших п'яти занять.<br>
           <br>Перший Урок курсу <span class="pop-course">{{ page.title }}</span> <strong>БЕЗКОШТОВНИЙ!</strong><br>
-          <br><span class="pop-price">Вартість курсу {{ page.price }} грн на місяць.</span><br>
+          <br>
+            {% if page.price %}<span class="pop-price">Вартість курсу {{ page.price }} грн на місяць.</span><br>{% endif %}
         </p>
         <span class="default-popup__warn">
           Заповніть будь-ласка поля форми!
