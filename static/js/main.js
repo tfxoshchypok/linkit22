@@ -57,6 +57,12 @@ var toggleAccord = function toggleAccord() {
   });
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.loaction.hash === 'subscribe') {
+    console.log('------ subscribe ------ ');
+  }
+})
+
 toggleAccord();
 
 if ($) {
@@ -65,6 +71,7 @@ if ($) {
       handler: function() {
         $('.num').counterUp({delay: 10, time: 10000})
       }
+      
     })
   })
 
