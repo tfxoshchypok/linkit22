@@ -24,15 +24,18 @@ menuSwitcher.addEventListener('click', function () {
 var popup = document.querySelector('.first-popup');
 var backdrop = document.querySelector('#firstPopupBackdrop');
 var buttons = document.querySelectorAll('.subscribe-button');
-buttons.forEach(function (button) {
-  button.addEventListener('click', function () {
-    if (popup.classList.contains('active')) {
+function openPop() {
+  if (popup.classList.contains('active')) {
       // popup.classList.remove('active');
       // backdrop.classList.remove('active');
     } else {
       popup.classList.add('active');
       backdrop.classList.add('active');
     }
+}
+buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    openPop();
   });
   popup?.querySelector('.default-popup__close')?.addEventListener('click', function () {
     popup.classList.remove('active');
@@ -59,8 +62,9 @@ var toggleAccord = function toggleAccord() {
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('hash: ', window.location.hash)
-  if (window.location.hash === 'subscribe') {
+  if (window.location.hash === '#subscribe') {
     console.log('------ subscribe ------ ');
+    openPop();
   }
 })
 
