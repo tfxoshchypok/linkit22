@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 })
 
-toggleAccord();
+// toggleAccord();
 
 if ($) {
   $(window).on('load', function() {
