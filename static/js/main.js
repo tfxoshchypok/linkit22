@@ -58,7 +58,7 @@ var toggleAccord = function toggleAccord() {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.loaction.hash === 'subscribe') {
+  if (window.location.hash === 'subscribe') {
     console.log('------ subscribe ------ ');
   }
 })
